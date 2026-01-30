@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrane Setbel - CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html">CV</a>
+        <a href="projets.html">Mes Projets</a>
+    </nav>
+
+    <h1>Amrane Setbel</h1>
+    <p class="sous-titre">Étudiant DEUST Webmaster</p>
+
+    <hr>
+
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:amrane.setbel@hotmail.fr">amrane.setbel@hotmail.fr</a></p>
+    <p>Téléphone : 07 88 36 44 25</p>
+    <p>Adresse : 13 rue d'Alsace, 87220 FEYTIAT</p>
+    <p>Permis B - Véhicule personnel</p>
+
+    <hr>
+
+    <h2>Profil</h2>
+    <p>Professionnel polyvalent avec une forte capacité d'adaptation. Actuellement en reconversion dans le développement web.</p>
+    <p><strong>Qualités :</strong> Polyvalent, Adaptabilité, Esprit d'équipe, Rigoureux, Résolution de problèmes, Bienveillant</p>
+
+    <hr>
+
+    <h2>Formation</h2>
+    
+    <h3>DEUST Webmaster</h3>
+    <p>Université de Limoges - 2025 à 2026 (en cours)</p>
+
+    <h3>Technicien SAV en Électroménager et Audiovisuel</h3>
+    <p>AFPA Limoges - 2023 à 2024</p>
+
+    <h3>BTS Action Commerciale</h3>
+    <p>CFA CODIS Paris - 2000 à 2002</p>
+
+    <h3>Baccalauréat Économique et Social</h3>
+    <p>Lycée Léon Blum, Créteil - 1999 à 2000</p>
+
+    <hr>
+
+    <h2>Expériences Professionnelles</h2>
+
+    <h3>Technicien SAV - Stage</h3>
+    <p>DARTY Limoges - Janvier à Février 2024</p>
+    <p>Diagnostic, dépannage et réparation d'appareils électroménagers</p>
+
+    <h3>Opérateur de Production</h3>
+    <p>ENVIE Limoges - Février 2023 à Décembre 2023</p>
+    <p>Réparation et reconditionnement de produits électroménagers</p>
+
+    <h3>Inventoriste / Préparateur / Vendeur</h3>
+    <p>PROMAN Toulouse - 2014 à 2019</p>
+    <p>Missions en intérim : gestion des stocks, préparation de commandes et vente</p>
+
+    <h3>Vendeur Magasin</h3>
+    <p>SFR Toulouse - 2012 à 2013</p>
+    <p>Conseil et vente de produits et services téléphoniques</p>
+
+    <h3>Gérant</h3>
+    <p>SAHH (Salon de thé) Toulouse - 2006 à 2012</p>
+    <p>Accueil clientèle, préparation et service, gestion des stocks</p>
+
+    <hr>
+
+    <h2>Compétences</h2>
+
+    <h3>Techniques</h3>
+    <ul>
+        <li>Diagnostic et dépannage</li>
+        <li>Analyse technique</li>
+        <li>Gestion des risques et sécurité</li>
+    </ul>
+
+    <h3>Relation Client</h3>
+    <ul>
+        <li>Analyse des besoins client</li>
+        <li>Conseil et fidélisation</li>
+        <li>Satisfaction clientèle</li>
+    </ul>
+
+    <h3>Informatique</h3>
+    <ul>
+        <li>HTML/CSS (en apprentissage)</li>
+        <li>Word/Excel/PowerPoint</li>
+        <li>Internet et veille technologique</li>
+    </ul>
+
+    <hr>
+
+    
+<div>
+    <h2>Météo</h2>
+    <div id="meteo" class="api-container">
+    <h3>Météo en temps réel</h3>
+    <div id="meteo-data">Chargement de la météo...</div>
+</div>
+
+    <hr>
+
+    <h2>Centres d'Intérêt</h2>
+    <ul>
+        <li>Voyages et découvertes culturelles</li>
+        <li>Développement de compétences interculturelles</li>
+        <li>Ouverture d'esprit et adaptabilité</li>
+    </ul>
+
+    <hr>
+
+    <footer>
+        <p>Copyright 2026 - Amrane Setbel</p>
+    </footer>
+
+    
+  <script>
+
+fetch('https://wttr.in/Feytiat?format=j1')
+  .then(response => response.json())
+  .then(data => {
+    const temp = data.current_condition[0].temp_C;
+    const desc = data.current_condition[0].lang_fr[0].value;
+    
+
+    document.getElementById('meteo-data').innerHTML = `
+      <p><strong>Ville :</strong> Feytiat</p>
+      <p><strong>Température :</strong> ${temp}°C</p>
+      <p><strong>Ciel :</strong> ${desc}</p>
+    `;
+  })
+  .catch(error => {
+    document.getElementById('meteo-data').innerHTML = "Météo non disponible.";
+  });
+</script>
+           
+    
+
+</body>
+</html>

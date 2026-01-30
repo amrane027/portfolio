@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.sous-titre {
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+}
+
+h2 {
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #333;
+    margin-top: 15px;
+}
+
+a {
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+#meteo  {
+    background-color: #e8f4f8;
+    padding: 15px;
+    border-left: 4px solid #0066cc;
+    margin: 15px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #666;
+}
+
+.api-container {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #0066cc; /* Rappel du bleu de vos titres */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.api-container h3 {
+    margin-top: 0;
+    color: #0066cc;
+}
