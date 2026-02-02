@@ -85,11 +85,12 @@ footer {
     border-radius: 10px;
     padding: 15px;
     margin-top: 20px;
-    border: 1px solid #0066cc; /* Rappel du bleu de vos titres */
+    border: 1px solid #0066cc; 
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
 .api-container h3 {
     margin-top: 0;
     color: #0066cc;
+
 }
